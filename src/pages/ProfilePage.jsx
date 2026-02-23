@@ -31,10 +31,16 @@ const ProfilePage = () => {
                   : assets.avatar_icon
               }
               alt=""
-              className={`w w-12 h-12 ${selectedImg && "rounded-full"}`}
+              className={`w-12 h-12 ${selectedImg && "rounded-full"}`}
             />
             Upload Profile Image
           </label>
+          <input
+            type="text"
+            required
+            placeholder="Your Name"
+            className="p2 p-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500"
+          />
         </form>
         <img src="" alt="" />
       </div>
